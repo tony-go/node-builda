@@ -1,0 +1,22 @@
+{
+  "name": "node-builda",
+  "version": "1.0.0",
+  "description": "Command line tool for build nodejs boilerplate.",
+  "main": "bin.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tony-go/node-builda.git"
+  },
+  "keywords": [
+    "nodejs",
+    "boilerplate",
+    "express",
+    "mongodb"
+  ],
+  "author": "Tony Gorez <gorez.tony@gmail.com> (tonygorez.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tony-go/node-builda/issues"
+  },
+  "homepage": "https://github.com/tony-go/node-builda#readme"
+}
