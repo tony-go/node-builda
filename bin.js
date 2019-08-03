@@ -3,7 +3,27 @@
 
 process.title = 'node-builda'
 
-// test
+// example of map object according to command line args
+
+const mapReference = {
+  framework: {
+    express: {
+      imports: [
+        { module: 'express', defaultImport: 'express' },
+        { module: 'body-parser', defaultImport: 'bodyParser' }
+      ],
+      assign: [
+        { target: 'express', varName: 'app', isCall: true }
+      ],
+      calls: []
+    }
+  },
+  db: {}
+}
+
+console.log(mapReference)
+
+// test => visit ./test
 
 const line = require('./lib/generator/line')
 
