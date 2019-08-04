@@ -1,11 +1,14 @@
 {
   "name": "node-builda",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Command line tool for build nodejs boilerplate.",
   "main": "bin.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tony-go/node-builda.git"
+  },
+  "bin": {
+    "node-builda": "./bin.js"
   },
   "keywords": [
     "nodejs",
@@ -18,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/tony-go/node-builda/issues"
   },
-  "homepage": "https://github.com/tony-go/node-builda#readme"
+  "homepage": "https://github.com/tony-go/node-builda#readme",
+  "dependencies": {
+    "js-beautify": "^1.10.1",
+    "npm-run-all": "^4.1.5",
+    "standard": "^13.1.0",
+    "tape": "^4.11.0"
+  },
+  "scripts": {
+    "test": "run-s test:*",
+    "test:lint": "standard",
+    "test:unit": "tape ./test/**/**/*.js",
+    "lint": "standard --fix"
+  }
 }
