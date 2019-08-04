@@ -8,17 +8,24 @@ process.title = 'node-builda'
 const mapReference = {
   framework: {
     express: {
-      imports: [
-        { module: 'express', defaultImport: 'express' },
-        { module: 'body-parser', defaultImport: 'bodyParser' }
-      ],
-      assign: [
-        { target: 'express', varName: 'app', isCall: true }
-      ],
-      calls: []
+      imports: {
+        regular: [
+          { module: 'express', defaultImport: 'express' },
+          { module: 'body-parser', defaultImport: 'bodyParser' }
+        ],
+        extra: []
+      },
+      core: {
+        regular: [],
+        extra: []
+      },
+      exports: []
     }
   },
-  db: {}
+  db: {},
+  package: {},
+  linter: null, // for V2
+  ci: null // for V2
 }
 
 console.log(mapReference)
